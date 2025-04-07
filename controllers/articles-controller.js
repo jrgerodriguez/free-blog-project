@@ -49,8 +49,7 @@ function createNewArticle(Schema) {
 
         const articleDocument = {
             title,
-            content,
-            publishedAt
+            content
         }
 
         if (!articleDocument.title || !articleDocument.content) {
@@ -82,8 +81,7 @@ function updateArticleById(Schema) {
 
         const articleDocument = {
             title,
-            content,
-            publishedAt
+            content
         }
 
         if (!articleDocument.title || !articleDocument.content) {
