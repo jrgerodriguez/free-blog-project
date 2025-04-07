@@ -1,0 +1,42 @@
+### Get all users 
+### // GET users/
+GET http://localhost:3000/users/
+
+### Get user by ID
+### // GET users/id
+GET http://localhost:3000/users/67f1dcbec2a17f34fefb9eb4
+
+### Create a new user
+### // POST users/
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+ "firstName": "Jorge",
+ "lastName": "Menjivar",
+ "email": "jorge.menjivar@email.com", 
+ "city": "San Salvador",
+ "country": "El Salvador",
+ "instagram": "@jorge_m",
+ "facebook": "jorge.menjivar"
+}
+
+### Update an existing user
+### // PUT users/id
+PUT http://localhost:3000/users/67f1dcbec2a17f34fefb9eb4
+Content-Type: application/json
+
+{
+ "firstName": "George",
+ "lastName": "Menjivar",
+ "email": "george.menjivar@email.com", 
+ "city": "San Salvador",
+ "country": "El Salvador",
+ "instagram": "@george_m",
+ "facebook": "george.menjivar"
+}
+
+### Delete an existing user
+### // DELETE users/id
+DELETE http://localhost:3000/users/67f1dcbec2a17f34fefb9eb4
+
