@@ -5,7 +5,7 @@
     "description": "This is documentation for our API",
     "version": "1.0.0"
   },
-  "host": "https://free-blog-project.onrender.com",
+  "host": "free-blog-project.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
