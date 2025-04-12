@@ -5,7 +5,7 @@ const doc = {
     title: 'Free Blog API',
     description: 'This is documentation for our API'
   },
-  host: 'localhost:3000'
+  host: 'free-blog-project.onrender.com'
 };
 
 const outputFile = './swagger-output.json';
