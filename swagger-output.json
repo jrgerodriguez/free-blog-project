@@ -771,5 +771,29 @@
         }
       }
     }
-  }
+  },
+  "components": {
+    "securitySchemes": {
+      "oAuthNoScopes": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://accounts.google.com/o/oauth2/v2/auth",
+            "scopes": {
+              "https://www.googleapis.com/auth/userinfo.email": "Access to your email address",
+              "https://www.googleapis.com/auth/userinfo.profile": "Access to your basic profile info"
+            }
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "oAuthNoScopes": [
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    }
+  ]
 }
