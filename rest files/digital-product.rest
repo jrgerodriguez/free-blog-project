@@ -1,0 +1,41 @@
+### Get all products 
+### // GET digital-products/
+GET http://localhost:3000/digital-products/
+
+### Get product by ID
+### // GET digital-products/id
+GET http://localhost:3000/digital-products/67f9c235d20e0e23fe3a245a
+
+### Create a new product
+### // POST digital-products/
+POST http://localhost:3000/digital-products/
+Content-Type: application/json
+
+{
+ "name": "Test",
+ "version": "Test",
+ "company": "Test", 
+ "description": "Test",
+ "extra": "Test",
+ "plan": "Test",
+ "available": true
+}
+
+### Update an existing product
+### // PUT digital-products/id
+PUT http://localhost:3000/digital-products/67f9c42f93c6a0d67f6d61ad
+Content-Type: application/json
+
+{
+ "name": "Test",
+ "version": "Test",
+ "company": "Test", 
+ "description": "Test",
+ "extra": "Test",
+ "plan": "Test",
+ "available": false
+}
+
+### Delete an existing product
+### // DELETE digital-products/id
+DELETE http://localhost:3000/digital-products/67f9c42f93c6a0d67f6d61ad

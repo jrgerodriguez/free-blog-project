@@ -5,6 +5,11 @@ const connectDB = require("./config/db");
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
 const cors = require("cors");
+const passport = require("passport")
+const session = require("express-session")
+
+//Passport config 
+require("./config/passport")
 
 var options = {
   explorer: true
@@ -19,8 +24,20 @@ app.use(cors({origin: '*'}))
 
 const PORT = process.env.PORT || 3000;
 
+//Session middleware
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: false,
+}))
+
+//Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
+
 //Routes
 app.use("/", require("./routes/index"));
+app.use("/auth", require("./routes/auth"));
 
 (async () => {
   try {

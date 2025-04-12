@@ -4,7 +4,7 @@ GET http://localhost:3000/articles/
 
 ### Get articles by ID
 ### // GET articles/id
-GET http://localhost:3000/articles/67f34a48bd17c2cc36187b24
+GET http://localhost:3000/articles/67f1593ccb8e29a9b455a461
 
 ### Create a new article
 ### // POST articles/
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 ### Update an article
 ### // PUT articles/id
-PUT http://localhost:3000/articles/67f34a48bd17c2cc36187b24
+PUT http://localhost:3000/articles/67f9d3c391b5f8bcb13ee428
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ### Delete an existing article
 ### // DELETE articles/id
-DELETE http://localhost:3000/articles/67f34a48bd17c2cc36187b24
+DELETE http://localhost:3000/articles/67f9d3c391b5f8bcb13ee428

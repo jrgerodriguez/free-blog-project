@@ -1,0 +1,40 @@
+### Get all products 
+### // GET hardware-products/
+GET http://localhost:3000/hardware-products/
+
+### Get product by ID
+### // GET hardware-products/id
+GET http://localhost:3000/hardware-products/67f9e39e2b7606fea38d9528
+
+### Create a new product
+### // POST hardware-products/
+POST http://localhost:3000/hardware-products/
+Content-Type: application/json
+
+{
+ "name": "Test",
+ "price": "200",
+ "description": "Test", 
+ "model": "Test",
+ "brand": "Test",
+ "category": "Test"
+}
+
+### Update an existing product
+### // PUT hardware-products/id
+PUT http://localhost:3000/hardware-products/67f9e39e2b7606fea38d9528
+Content-Type: application/json
+
+{
+ "name": "Update Test",
+ "price": 200,
+ "description": "Update Test", 
+ "model": "Update Test",
+ "brand": "Update Test",
+ "category": "Update Test"
+}
+
+### Delete an existing product
+### // DELETE hardware-products/id
+DELETE http://localhost:3000/hardware-products/67f9e54447da7f7f6df6ff7e
+
